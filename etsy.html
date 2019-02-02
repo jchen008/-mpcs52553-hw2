@@ -2,9 +2,184 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>etsy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="etsy.css">
+
   </head>
   <body>
 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand title" style = "color:coral" href="#">Etsy</a>
+        
+        <ul class="navbar-nav mr-auto">
+          <form class="form-inline my-6 my-lg-0 d-none d-md-block ">
+            <input class="form-control mr-sm-2 " style="width: 250px" type="search" placeholder="Search for items or shops" aria-label="Search">
+            <button class="btn btn-dark my-2 my-sm-0 " type="submit">Search</button>
+          </form>
+
+          <button class="navbar-toggler d-md-none" data-toggle="collapse" data-target="#collapse_target">
+            <i class="fa fa-bars fa-lg py-1 text-grey"></i>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="collapse_target">
+            <ul class="navbar-nav nav-fill w-100 d-md-none">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Jewelry & Accessories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clothing & Shoes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home & Living</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wedding & Party</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Toys & Entertainment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Art & Collectibles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Craft Supplies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vintage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-gift"></i> Gift</a>
+              </li>
+            </ul>
+          </div>
+
+
+        </ul>
+        <div>
+          <ul class="navbar-nav ml-auto navbar-toggleable-xl  flex-row-reverse line1"> 
+            <li class="nav-item p-1 line1"><a class="nav-link sidebar-social" href="#"><i class="fas fa-shopping-cart"></i><span>Cart</span></a></li>
+            <li class="nav-item p-1 line1"><a class="nav-link sidebar-social" href="#"><i class="fas fa-briefcase"></i><span>Discover</span></a></li>
+            <button type="button p-1" class="btn btn-outline-dark btn-sm line1">Sign in</button>
+            <li class="nav-item p-1 line1"><a class="nav-link" href="#">Register</a></li>
+            <li class="nav-item p-1 line1"><a class="nav-link" href="#">Sell on Etsy</a></li>
+          </ul>
+          <ul class="navbar-nav flex-row-reverse">
+            <li class="nav-item p-2 line2"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="nav-item p-2 line2"><a class="nav-link" href="#"><i class="fas fa-briefcase"></i></a></li>
+            <button type="button p-2" class="btn btn-outline-dark btn-sm line2">Sign in</button>
+            <li class="nav-item p-2 line2"><a class="nav-link" href="#">Sell</a></li>
+          </ul>
+        </div>
+      </nav>
+
+  
+      <nav class="navbar navbar-expand-md navbar-custom ">
+          <button class="navbar-toggler d-none" data-toggle="collapse" data-target="#collapse_target">
+            <i class="fa fa-bars fa-lg py-1 text-grey"></i>
+          </button>
+
+          <form class="col-lg-6 offset-lg-3 d-md-none">
+            <div class="row justify-content-center">
+              <input class="form-control text-center" style="width: 250px" type="search" placeholder="Search for items or shops">
+              <span class="input-group-btn">
+                <button class="btn btn-dark btn-primary" type="submit">Search</button>
+              </span>
+            </div>
+          </form>
+          <div class="collapse navbar-collapse d-none d-md-block" id="collapse_target">
+            <ul class="navbar-nav nav-fill w-100 ">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Jewelry & Accessories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clothing & Shoes</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link" href="#">Home & Living</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wedding & Party</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Toys & Entertainment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Art & Collectibles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Craft Supplies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vintage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-gift"></i> Gift</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 class="text-center">If it's handcrafted, vintage, custom or unique, it's on Etsy.</h1>
+   
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-3 padding-0R B1">
+          <div class="block1">
+            <div class="center light-text">
+                <h3>Find stones that tell their story.</h3>
+                <a href="#" class ="light-text" >Shop jewelry and accessories <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 padding-0L B2" style="height:300px">
+          <img class="img-fluid" style="height:300px" src="etsy2.jpg"/>
+        </div>
+
+        <div class="col-md-4 B3">
+          <div class="block3" style="height:200px">
+            <div class="text3">
+                Try a fresh take on your living space.
+                <br>
+                <a href="#" style="color:black; font-size:16px">Shop decor <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div style="background:white; height:10px"></div>
+          <div class="block4" style="height:90px">
+              <a href="#" class="light-text text-4">Discover unique finds, every week <i class="fas fa-angle-right"></i></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row last-row">
+        <div class="col-sm-4">
+          <h4><i class="fas fa-check" style="color:coral"></i> Unique everything</h3>
+          <p style="text-align: center">We have millions of one-of-a-kind items, so you can find whatever you need (or really, really want).</p>
+        </div>
+        <div class="col-sm-4">
+          <h4><i class="fas fa-check" style="color:coral"></i> Independent sellers</h3>
+          <p style="text-align: center">Buy directly from someone who put their heart and soul into making something special.</p>
+        </div>
+        <div class="col-sm-4">
+          <h4><i class="fas fa-check" style="color:coral"></i> Secure shopping</h3>
+          <p style="text-align: center">We use best-in-class technology to protect your transactions.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+
+

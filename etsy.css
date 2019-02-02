@@ -1,0 +1,179 @@
+
+header{
+    padding: 25px 50px 25px 50px;
+}
+
+.title{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+}
+
+html, body {
+  min-width: 400px;
+}
+
+h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Times New Roman", Times, serif;
+    color:#333333;
+}
+
+h4{
+    text-align:center;
+}
+
+
+.light-text{
+    color:white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.last-row{
+    padding-top:30px;
+}
+.navbar-custom {
+    background-color: #ffffff;
+    border-bottom: 1px solid #bbbbbb;
+    border-top: 1px solid #bbbbbb;
+    border-radius: 0;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color:#333333;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #333333;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #333333;
+}
+
+.sidebar-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: #444;
+    text-decoration: none;
+    border-left: 1px solid #444 ;
+    margin-left: 10px;
+    padding-left: 20px !important;
+    padding-right: 2px !important;
+}
+
+@media (min-width: 800px) {
+    .container{
+        max-width: 1320px;
+    }
+
+    .padding-0R{
+        padding-right:0;
+    }
+
+    .padding-0L{
+        padding-left:0;
+    }
+
+    img {
+    width: 550px; /* You can set the dimensions to whatever you want */
+    height: 300px;
+    object-fit: cover;
+    }
+}
+
+@media (max-width: 800px) {
+    img{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:822px) {
+    .line1{
+        display:none;
+    }
+}
+
+@media (min-width:822px){
+    .line2{
+        display:none;
+    }
+}
+
+@media (max-width:768px){
+    .search1{
+        display:none;
+    }
+    .B1{
+        order:2;
+    }
+    .B2{
+        order:1;
+    }
+    .B3{
+        order:3;
+    }
+
+ 
+}
+
+@media (min-width:768px){
+    .search2{
+        display:none;
+    }
+}
+
+
+
+.block1{
+    background-color: maroon; 
+    height:300px;
+    margin: 0px;
+}
+
+.block3{
+    background-image: url("etsy3.jpg");
+    background-size: 100% 100%;
+}
+
+.text3{
+    position: relative;
+    float: left;
+    top: 8%;
+    left: 8%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+
+}
+
+.block4{
+    background-color: maroon; 
+}
+
+.text-4{
+position: relative;
+float: left;
+top: 40%;
+left: 10%;
+}
+
+
